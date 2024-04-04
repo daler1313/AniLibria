@@ -4,7 +4,7 @@ namespace Domain.Entity
 {
     public class Reading
     {
-        //рейтинг
+        
         public int Id { get; set; }
         public int MangaId { get; set; }
         public int UserId { get; set; }

@@ -22,7 +22,7 @@ namespace Infastructure.Data.Configurations
 
             builder.HasOne(a => a.Author)
                 .WithMany(f => f.Animes)
-                .HasForeignKey (a => a.Author.Id)
+                .HasForeignKey (a => a.AuthorId)
                 .OnDelete(DeleteBehavior.Cascade);
 
         }

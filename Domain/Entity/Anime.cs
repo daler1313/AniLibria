@@ -7,5 +7,7 @@
         public int AuthorId { get; set; }
         public int GenreId { get; set; }
         public int DateOfSsue { get; set; }
+        public virtual ICollection<Season> Seasons { get; set; }
+        public virtual ICollection<Vewing> Vewings { get; set; }
     }
 }

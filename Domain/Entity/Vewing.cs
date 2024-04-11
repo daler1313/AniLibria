@@ -2,9 +2,8 @@
 
 namespace Domain.Entity
 {
-    public class Vewing
+    public class Vewing: BaseEntity
     {
-        public int Id { get; set; }
         public int AmineId { get; set; }
         public int UserId { get; set; }
         public int CommentsId { get; set; }

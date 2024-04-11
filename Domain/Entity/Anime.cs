@@ -1,8 +1,7 @@
 ﻿namespace Domain.Entity
 {
-    public class Anime
+    public class Anime : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public int AuthorId { get; set; }

@@ -2,10 +2,9 @@
 
 namespace Domain.Entity
 {
-    public class Reading
+    public class Reading : BaseEntity
     {
         
-        public int Id { get; set; }
         public int MangaId { get; set; }
         public int UserId { get; set; }
         public int CommentId { get; set; }

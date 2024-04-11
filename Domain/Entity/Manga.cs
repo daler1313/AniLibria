@@ -1,9 +1,8 @@
 ﻿namespace Domain.Entity
 {
-    public class Manga
+    public class Manga : BaseEntity
     {
         
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public int GenreId { get; set; }

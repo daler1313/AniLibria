@@ -1,8 +1,7 @@
 ﻿using Domain.Entity;
-
-namespace Domain.Interfaces.Repositories
+namespace Application.Services
 {
-    public interface IBaseRepository <TEntity> where TEntity : BaseEntity
+    public interface IBaseService<TEntity> where TEntity : BaseEntity
     {
         Task<TEntity> GetAsync(int id, CancellationToken token = default);
         Task<IEnumerable<TEntity>> GetAllAsync(CancellationToken token = default);

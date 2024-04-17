@@ -19,7 +19,7 @@ namespace Infastructure.Data
         }
         public DbSet<Anime> Anime { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Author> Author { get; set; }
+        public DbSet<Author> Authors { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet <Manga> Manga { get; set; }

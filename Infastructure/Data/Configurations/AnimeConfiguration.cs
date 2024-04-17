@@ -24,6 +24,10 @@ namespace Infastructure.Data.Configurations
                 .WithMany(f => f.Animes)
                 .HasForeignKey (a => a.AuthorId)
                 .OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(a => a.Genre)
+                .WithMany(g => g.Animes)
+                .HasForeignKey(a => a.GenreId)
+                 .OnDelete(DeleteBehavior.Cascade);
 
         }
 

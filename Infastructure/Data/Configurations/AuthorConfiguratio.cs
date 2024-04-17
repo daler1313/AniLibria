@@ -10,11 +10,11 @@ namespace Infastructure.Data.Configurations
         {
             builder.HasKey(a => a.Id);
             builder.Property(a => a.FullName)
-               .HasMaxLength(80)
+          
                .IsRequired();
 
             builder.Property(a => a.YearOfDirth)
-              .HasMaxLength(10)
+          
               .IsRequired();
 
         }

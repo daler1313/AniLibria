@@ -5,7 +5,7 @@
         private const string ApiBase = "api";
         public static class Method
         {
-            private const string Base = $"{ApiBase}/buildings";
+            private const string Base = $"{ApiBase}/Anime";
             public const string Create = Base;
             public const string Get = $"{Base}/{{id:guid}}";
             public const string GetAll = Base;

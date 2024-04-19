@@ -8,11 +8,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infastructure", "Infastructure\Infastructure.csproj", "{31581835-1812-4948-B0DD-41900A5542B2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{4E29BFC5-9194-4133-8BC2-0CAA07D1D63D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{350BF4D0-86CD-4F74-9D4A-D28F02605711} = {350BF4D0-86CD-4F74-9D4A-D28F02605711}
-	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.API", "ApiAniLibria\Web.API.csproj", "{2FA71FDD-142F-4C61-A949-1B22BFC49186}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAniLibria", "ApiAniLibria\ApiAniLibria.csproj", "{2FA71FDD-142F-4C61-A949-1B22BFC49186}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{3100039C-241B-452A-A9B6-52E80428C1FD}"
 EndProject

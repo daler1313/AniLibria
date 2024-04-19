@@ -7,19 +7,25 @@ namespace Application.Services
     {
         private readonly IBaseRepository<Anime> _AnimeRepository;
 
-        public AnimeService(IBaseRepository<Anime> buildingRepository)
+        public AnimeService(IBaseRepository<Anime> animeRepository)
         {
-            _AnimeRepository = buildingRepository;
+            _AnimeRepository = animeRepository;
         }
 
-        public async Task<Anime> CreateAsync(Anime building, CancellationToken token = default)
+        public async Task<Anime> CreateAsync(Anime anime, CancellationToken token = default)
         {
-            return await _AnimeRepository.CreateAsync(building, token);
+            return await _AnimeRepository.CreateAsync(anime, token);
         }
 
-        public async Task<bool> DeleteAsync(Anime animes, CancellationToken token = default)
+
+        public async Task<bool> DeleteAsync(int id, CancellationToken token = default)
         {
-            return await _AnimeRepository.DeleteAsync(animes, token);
+            var anime = await _AnimeRepository.GetAsync(id, token);
+
+            if (anime == null)
+                return false;
+
+            return await _AnimeRepository.DeleteAsync(anime, token);
         }
 
         public async Task<IEnumerable<Anime>> GetAllAsync(CancellationToken token = default)

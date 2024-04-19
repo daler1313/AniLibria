@@ -15,6 +15,8 @@ namespace Web.API.Controllers
         private readonly IMapper _mapper;
 
 
+        /**/
+
         public AnimeController(IMapper mapper, IBaseService<Anime> AnimeService)
         {
             _AnimeService = AnimeService;

@@ -1,13 +1,15 @@
 ﻿namespace Domain.Entity
 {
-    public class Anime
+    public class Anime : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public Author Author { get; set; }  
         public int AuthorId { get; set; }
-        public int SeasonID { get; set; }
+        public Genre Genre { get; set; }
         public int GenreId { get; set; }
         public int DateOfSsue { get; set; }
+        public virtual ICollection<Season> Seasons { get; set; }
+        public virtual ICollection<Vewing> Vewings { get; set; }
     }
 }

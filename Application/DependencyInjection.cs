@@ -11,6 +11,7 @@ namespace Application
         {
             services.AddScoped<IBaseService<Anime>, AnimeService>();
             services.AddScoped<IBaseService<Genre>, GenreService>();
+            services.AddScoped<IBaseService<Comment>, CommentService>();
             services.AddScoped<IBaseService<Author>, AuthorService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

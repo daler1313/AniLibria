@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Contracts.Responses
 {
-    public class GetAllAuthorResponse
+    public class SingleAuthorResponse
     {
-        public IEnumerable<SingleAuthorResponse> Items { get; set; } = Enumerable.Empty<SingleAuthorResponse>();
+        public int Id { get; set; }
+        public string FullName { get; set; }
+        public int YearOfDirth { get; set; }
     }
 }

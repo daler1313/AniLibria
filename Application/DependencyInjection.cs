@@ -10,6 +10,7 @@ namespace Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddScoped<IBaseService<Anime>, AnimeService>();
+            services.AddScoped<IBaseService<Author>, AuthorService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             return services;

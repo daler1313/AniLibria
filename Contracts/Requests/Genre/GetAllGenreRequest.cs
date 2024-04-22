@@ -9,6 +9,6 @@ namespace Contracts.Requests.Genre
 {
     public class GetAllGenreRequest
     {
-        public IEnumerable<Genre> Items { get; set; } = Enumerable.Empty<Genre>();
+        public IEnumerable<Domain.Entity.Genre> Items { get; set; } = Enumerable.Empty<Domain.Entity.Genre>();
     }
 }

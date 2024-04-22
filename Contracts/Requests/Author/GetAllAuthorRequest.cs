@@ -9,6 +9,6 @@ namespace Contracts.Requests.Author
 {
     public class GetAllAuthorRequest
     {
-        public IEnumerable<Author> Items { get; set; } = Enumerable.Empty<Author>();
+        public IEnumerable<Domain.Entity.Author> Items { get; set; } = Enumerable.Empty<Domain.Entity.Author>();
     }
 }

@@ -9,6 +9,6 @@ namespace Contracts.Requests.Comment
 {
     public class GetAllCommentRequest
     {
-        public IEnumerable<Comment> Items { get; set; } = Enumerable.Empty<Comment>();
+        public IEnumerable<Domain.Entity.Comment> Items { get; set; } = Enumerable.Empty<Domain.Entity.Comment>();
     }
 }

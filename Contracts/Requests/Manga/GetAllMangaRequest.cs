@@ -9,6 +9,6 @@ namespace Contracts.Requests.Manga
 {
     public class GetAllMangaRequest
     {
-        public IEnumerable<Manga> Items { get; set; } = Enumerable.Empty<Manga>();
+        public IEnumerable<Domain.Entity.Manga> Items { get; set; } = Enumerable.Empty<Domain.Entity.Manga>();
     }
 }

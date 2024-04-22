@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Requests.Manga
 {
-    public class GetAllGenreRequest
+    public class GetAllMangaRequest
     {
-        public IEnumerable<Genre> Items { get; set; } = Enumerable.Empty<Genre>();
+        public IEnumerable<Manga> Items { get; set; } = Enumerable.Empty<Manga>();
     }
 }

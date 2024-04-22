@@ -5,13 +5,13 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Requests.Comment
 {
-    public class UpdateAuthorRequest
+    public class UpdateCommentRequest
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public string FullName { get; set; }
-        public int YearOfDirth { get; set; }
+        public string Title { get; set; }
+
     }
 }

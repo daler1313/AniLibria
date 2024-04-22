@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Contracts.Requests;
-using Contracts.Responses;
+using Contracts.Requests.Manga;
+using Contracts.Responses.Manga;
 using Domain.Entity;
 using System;
 using System.Collections.Generic;

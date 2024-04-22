@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Requests.Anime
 {
     public class CreateAnimeRequest
     {
@@ -17,6 +17,6 @@ namespace Contracts.Requests
 
         public int GenreId { get; set; }
         public int DateOfSsue { get; set; }
-  
+
     }
 }

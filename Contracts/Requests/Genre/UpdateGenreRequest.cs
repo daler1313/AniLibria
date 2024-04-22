@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Requests.Genre
 {
     public class UpdateGenreRequest
     {

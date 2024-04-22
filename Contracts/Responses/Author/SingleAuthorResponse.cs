@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Responses.Author
 {
-    public class CreateAuthorRequest
+    public class SingleAuthorResponse
     {
+        public int Id { get; set; }
         public string FullName { get; set; }
         public int YearOfDirth { get; set; }
     }

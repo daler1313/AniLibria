@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Requests
+namespace Contracts.Requests.Genre
 {
-    public class GetAllAnimeRequest
+    public class GetAllGenreRequest
     {
-        public IEnumerable<Anime> Items { get; set; } = Enumerable.Empty<Anime>();
+        public IEnumerable<Genre> Items { get; set; } = Enumerable.Empty<Genre>();
     }
 }

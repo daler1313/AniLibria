@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Contracts.Requests;
-using Contracts.Responses;
+using Contracts.Requests.Comment;
+using Contracts.Responses.Comment;
 using Domain.Entity;
 using System;
 using System.Collections.Generic;

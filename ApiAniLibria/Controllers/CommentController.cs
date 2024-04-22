@@ -1,7 +1,8 @@
 ﻿using Application.Services;
 using AutoMapper;
-using Contracts.Requests;
-using Contracts.Responses;
+using Contracts.Requests.Comment;
+using Contracts.Responses.Comment;
+using Contracts.Responses.Genre;
 using Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Web.API;

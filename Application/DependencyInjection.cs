@@ -13,6 +13,7 @@ namespace Application
             services.AddScoped<IBaseService<Genre>, GenreService>();
             services.AddScoped<IBaseService<Comment>, CommentService>();
             services.AddScoped<IBaseService<Author>, AuthorService>();
+            services.AddScoped<IBaseService<Manga>, MangaService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             return services;

@@ -8,5 +8,6 @@ namespace Contracts.Requests.User
 {
     public class GetAllUserRequest
     {
+        public IEnumerable<Domain.Entity.User> Items { get; set; } = Enumerable.Empty<Domain.Entity.User>();
     }
 }

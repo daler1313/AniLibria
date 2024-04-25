@@ -1,0 +1,33 @@
+﻿@page "/counter"
+
+@using AniLibria.Client.Service
+@using Contracts.Responses.Genre
+<h3>Genre</h3>
+
+<h3>Data from RESTful API</h3>
+
+@if (data != null)
+{
+    <ul>
+        @foreach (var item in data)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Loading data...</p>
+}
+
+@code {
+    private IEnumerable<SingleGenreResponse> data;
+
+    [Inject]
+    private ApiService ApiService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        data = await ApiService.Get<SingleGenreResponse>("/Genre/api/AniLibria");
+    }
+}

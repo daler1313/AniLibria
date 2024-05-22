@@ -4,11 +4,20 @@ using Infastructure.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
 
 // Add services to the container.
+//Create Logger from settings from appsettings.json
+var logger = new LoggerConfiguration()
+.ReadFrom.Configuration(builder.Configuration)
+.CreateLogger();
+//Add Logger
+Log.Logger = logger;
+builder.Host.UseSerilog(logger);
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -55,7 +64,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//Use Logger after any custom exception handling middleware
+//app.UseMiddleware<ExceptionHandlingMiddleware>();
+//Use Serilog
+app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
